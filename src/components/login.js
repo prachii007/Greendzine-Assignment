@@ -15,7 +15,7 @@ export const Login = () => {
         }
     }
     return (
-        <div className='Container'>
+        <div className='login-container'>
             <img src={Cycle} style={{ marginBottom: "20px" }} />
             <div
                 style={{ color: "#36A546CC", fontSize: "16px", marginBottom: "40px" }}>

@@ -151,7 +151,7 @@ export const Home = () => {
               }}
             />
             <div className='search-icon'>
-              <i class="ri-search-line" style={{
+              <i className="ri-search-line" style={{
                 color: "#5e5e5e", fontSize: "20px"
               }} />
             </div>
@@ -173,10 +173,10 @@ export const Home = () => {
       }
       <div className='bottom-con'>
         <div onClick={HomeShow}>
-          <i class="ri-home-4-fill" style={{ color: "green" }} />
+          <i className="ri-home-4-fill" style={{ color: "green" }} />
         </div>
         <div onClick={EmpShow}>
-          <i class="ri-user-fill" style={{ color: "green" }} />
+          <i className="ri-user-fill" style={{ color: "green" }} />
         </div>
       </div>
     </div >

@@ -9,8 +9,6 @@
 
 .Container {
   margin: auto;
-  /* width: 80%; */
-  /* border: 1px solid red; */
   height: 100%;
   display: flex;
   align-items: center;
@@ -18,8 +16,16 @@
   flex-direction: column;
 }
 
+.login-container {
+  margin: auto;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
 .top-con {
-  /* border: 2px solid ghostwhite; */
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -65,7 +71,6 @@
 
 .bottom-con div:hover {
   cursor: pointer;
-  /* background-color: #1f1a1a; */
   background: #38383880 0% 0% no-repeat padding-box;
   border-radius: 8px;
 }
@@ -76,17 +81,17 @@
 }
 
 .scroll-container::-webkit-scrollbar-track {
-  background: transparent; /* Set the background to match the container */
+  background: transparent;
 }
 
-.search-wrapper{
+.search-wrapper {
   position: relative;
 }
 
 .search-icon {
   position: absolute;
   top: 50%;
-  right: 10px; /* Adjust right offset as needed */
+  right: 10px;
   transform: translateY(-50%);
-  color: #aaa; /* Adjust color of the icon */
+  color: #aaa;
 }

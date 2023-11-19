@@ -78,3 +78,15 @@
 .scroll-container::-webkit-scrollbar-track {
   background: transparent; /* Set the background to match the container */
 }
+
+.search-wrapper{
+  position: relative;
+}
+
+.search-icon {
+  position: absolute;
+  top: 50%;
+  right: 10px; /* Adjust right offset as needed */
+  transform: translateY(-50%);
+  color: #aaa; /* Adjust color of the icon */
+}

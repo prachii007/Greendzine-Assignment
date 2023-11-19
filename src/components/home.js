@@ -3,8 +3,6 @@ import Woman from '../assets/Group 46.png'
 import Logo from '../assets/moptro logo.png'
 import { EmpCard } from './empCard';
 import EmpData from '../components/empData.json'
-
-
 export const Home = () => {
 
   const [keyword, updateKeyword] = useState("");
@@ -134,7 +132,7 @@ export const Home = () => {
         </div>}
       {showEmpComp &&
         <div className='middle-con' style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
-          <div style={{ width: "90%" }}>
+          <div className='search-wrapper' style={{ width: "90%" }}>
             <input
               onChange={obj => updateKeyword(obj.target.value)}
               type='text' placeholder='Search with name'
@@ -146,12 +144,17 @@ export const Home = () => {
                 border: "black",
                 marginBottom: "25px",
                 width: "100%",
-                color: "white",
                 textAlign: 'center',
                 fontWeight: "bold",
-                marginTop: "20px", 
+                marginTop: "20px",
                 fontSize: "20px"
+              }}
+            />
+            <div className='search-icon'>
+              <i class="ri-search-line" style={{
+                color: "#5e5e5e", fontSize: "20px"
               }} />
+            </div>
           </div>
           <div className='scroll-container' style={{
             width: "90%",
@@ -169,8 +172,12 @@ export const Home = () => {
         </div>
       }
       <div className='bottom-con'>
-        <div onClick={HomeShow}>Home</div>
-        <div onClick={EmpShow}>Emp</div>
+        <div onClick={HomeShow}>
+          <i class="ri-home-4-fill" style={{ color: "green" }} />
+        </div>
+        <div onClick={EmpShow}>
+          <i class="ri-user-fill" style={{ color: "green" }} />
+        </div>
       </div>
     </div >
   )

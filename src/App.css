@@ -9,6 +9,59 @@
 
 .Container {
   margin: auto;
-  width: 80%;
-  border: 1px solid red;
+  /* width: 80%; */
+  /* border: 1px solid red; */
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+.top-con {
+  /* border: 2px solid ghostwhite; */
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+
+}
+
+.logo {
+  width: 70px;
+}
+
+.women {
+  align-self: flex-end;
+}
+
+.middle-con {
+  width: 100%;
+  /* border: 1px solid red; */
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-direction: column;
+}
+
+.bottom-con {
+  color: white;
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+  /* padding: 20px; */
+  box-sizing: border-box;
+  background-color: #413333;
+}
+
+.bottom-con div {
+  width: 100%;
+  padding: 20px;
+
+}
+
+.bottom-con div:hover {
+  cursor: pointer;
+  background-color: #1f1a1a;
+  border-radius: 8px;
 }

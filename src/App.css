@@ -1,4 +1,15 @@
 .App {
   text-align: center;
+  height: 800px;
+  width: 360px;
+  margin: auto;
+  background-color: black;
 }
 
+
+
+.Container {
+  margin: auto;
+  width: 80%;
+  border: 1px solid red;
+}

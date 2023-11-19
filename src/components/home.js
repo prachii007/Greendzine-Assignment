@@ -1,10 +1,12 @@
 import React, { useState } from 'react'
 import Woman from '../assets/Group 46.png'
 import Logo from '../assets/moptro logo.png'
-
+import { EmpCard } from './empCard';
+import EmpData from '../components/empData.json'
 
 
 export const Home = () => {
+
 
   const [showHomeComp, setShowHomeComp] = useState(true);
   const [showEmpComp, setShowEmpComp] = useState(false)
@@ -130,9 +132,31 @@ export const Home = () => {
             </div>
           </div>
         </div>}
-      {showEmpComp && <div>
-        Showing Emp
-      </div>}
+      {showEmpComp &&
+        <div className='middle-con' style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
+          <div style={{ width: "90%" }}>
+            <input type='text' placeholder='Search with name'
+              style={{
+                borderRadius: "20px",
+                lineHeight: "42px",
+                color: "white",
+                backgroundColor: '#5E5E5E82',
+                border: "black",
+                marginBottom: "25px",
+                width: "100%",
+                color: "white",
+                textAlign: 'center',
+                fontWeight: "bold"
+              }} />
+          </div>
+          <div style={{ width: "80%" }}>
+            {EmpData.map((data, index) => {
+              return (
+                <EmpCard key={index} data={data} />)
+            })}
+          </div>
+        </div>
+      }
       <div className='bottom-con'>
         <div onClick={HomeShow}>Home</div>
         <div onClick={EmpShow}>Emp</div>

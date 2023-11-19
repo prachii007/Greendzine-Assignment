@@ -25,8 +25,8 @@ export const Login = () => {
                 display: "flex",
                 flexDirection: "column",
             }}>
-                <input onChange={obj => setEmail(obj.target.value)} type='email' placeholder='E-mail' style={{ borderRadius: "20px", lineHeight: "42px", color: "white", backgroundColor: '#1F1919', boxShadow: "inset 0px 3px 3px #FFFDFD40, 3px 3px 3px #4A494947", border: "black", marginBottom: "25px" }} />
-                <input onChange={obj => setPassword(obj.target.value)} type='password' placeholder='Password' style={{ borderRadius: "20px", lineHeight: "42px", color: "white", backgroundColor: '#1F1919', boxShadow: "inset 0px 3px 3px #FFFDFD40, 3px 3px 3px #4A494947", border: 'black', marginBottom: "25px" }} />
+                <input onChange={obj => setEmail(obj.target.value)} type='email' placeholder='E-mail' style={{ paddingLeft: "15px", borderRadius: "20px", lineHeight: "42px", color: "white", backgroundColor: '#1F1919', boxShadow: "inset 0px 3px 3px #FFFDFD40, 3px 3px 3px #4A494947", border: "black", marginBottom: "25px" }} />
+                <input onChange={obj => setPassword(obj.target.value)} type='password' placeholder='Password' style={{ paddingLeft: "15px", borderRadius: "20px", lineHeight: "42px", color: "white", backgroundColor: '#1F1919', boxShadow: "inset 0px 3px 3px #FFFDFD40, 3px 3px 3px #4A494947", border: 'black', marginBottom: "25px" }} />
                 <button style={{
                     borderRadius: "20px",
                     lineHeight: "42px",

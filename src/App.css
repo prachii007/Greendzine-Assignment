@@ -69,3 +69,12 @@
   background: #38383880 0% 0% no-repeat padding-box;
   border-radius: 8px;
 }
+
+
+.scroll-container::-webkit-scrollbar {
+  width: 0;
+}
+
+.scroll-container::-webkit-scrollbar-track {
+  background: transparent; /* Set the background to match the container */
+}

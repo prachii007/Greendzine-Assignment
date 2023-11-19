@@ -7,7 +7,7 @@ import EmpData from '../components/empData.json'
 
 export const Home = () => {
 
-
+  const [keyword, updateKeyword] = useState("");
   const [showHomeComp, setShowHomeComp] = useState(true);
   const [showEmpComp, setShowEmpComp] = useState(false)
 
@@ -135,7 +135,9 @@ export const Home = () => {
       {showEmpComp &&
         <div className='middle-con' style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
           <div style={{ width: "90%" }}>
-            <input type='text' placeholder='Search with name'
+            <input
+              onChange={obj => updateKeyword(obj.target.value)}
+              type='text' placeholder='Search with name'
               style={{
                 borderRadius: "20px",
                 lineHeight: "42px",
@@ -146,11 +148,20 @@ export const Home = () => {
                 width: "100%",
                 color: "white",
                 textAlign: 'center',
-                fontWeight: "bold"
+                fontWeight: "bold",
+                marginTop: "20px", 
+                fontSize: "20px"
               }} />
           </div>
-          <div style={{ width: "80%" }}>
-            {EmpData.map((data, index) => {
+          <div className='scroll-container' style={{
+            width: "90%",
+            maxHeight: '400px', overflowY: 'auto', overflowX: "hidden"
+          }}>
+            {EmpData.filter(item => {
+              if (item.name.toLowerCase().includes(keyword.toLowerCase())) {
+                return item;
+              }
+            }).map((data, index) => {
               return (
                 <EmpCard key={index} data={data} />)
             })}

@@ -15,12 +15,12 @@
         "empID": 3,
         "name": "Prachi",
         "dob": "30-12-2000",
-        "role": "Data Scientist"
+        "role": "General Manager"
     },
     {
         "empID": 4,
         "name": "Vishal",
         "dob": "8-2-2000",
-        "role": "Data Scientist"
+        "role": "Assistant Manager"
     }
 ]

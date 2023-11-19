@@ -1,7 +1,16 @@
 import React from 'react'
 import Woman from '../assets/Group 46.png'
 import Logo from '../assets/moptro logo.png'
+import { useNavigate } from 'react-router-dom';
+
 export const Home = () => {
+  const navigate = useNavigate()
+  const goHome = () => {
+    navigate('/home')
+  }
+  const goEmp = () => {
+    navigate('/employees')
+  }
   return (
     <div className='Container'>
       <div style={{ display: 'flex', justifyContent: 'flex-end', marginBottom: "20px" }}>
@@ -76,8 +85,10 @@ export const Home = () => {
             borderRadius: "20px",
             backgroundColor: "#36A54680",
             marginLeft: "10px"
-          }}></div>
-        </div> <div style={{ marginBottom: "20px" }}>
+          }}>
+          </div>
+        </div>
+        <div style={{ marginBottom: "20px" }}>
           <div style={{ display: "flex", justifyContent: "space-evenly", marginBottom: "10px" }}>
             <div>Productivity on Friday</div>
             <div>89%</div>
@@ -106,8 +117,8 @@ export const Home = () => {
         </div>
       </div>
       <footer style={{ position: "sticky", bottom: "0", color: "white" }}>
-        <div>Home</div>
-        <div>Emp</div>
+        <div onClick={goHome}>Home</div>
+        <div onClick={goEmp}>Emp</div>
       </footer>
     </div >
   )

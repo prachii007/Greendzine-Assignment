@@ -32,8 +32,29 @@
 
 }
 
-.logo {
+.big-circle {
   width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  position: relative;
+  background-image: url(../src/assets/moptro\ logo.png);
+  align-self: center;
+  margin-top: 30px;
+}
+
+.small-circle {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  position: absolute;
+  top: -5px;
+  left: calc(50% + 35px);
+  transform: translate(-50%, -50%);
+  background: #5E5E5EB5 0% 0% no-repeat padding-box;
+  mix-blend-mode: normal;
+  border: 1px solid #FFFEFE00;
+  opacity: 0.4;
+  color: #36A546;
 }
 
 .woman {
@@ -42,7 +63,6 @@
 
 .middle-con {
   width: 100%;
-  /* border: 1px solid red; */
   box-sizing: border-box;
   display: flex;
   justify-content: center;

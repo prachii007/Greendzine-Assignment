@@ -21,8 +21,8 @@ export const Home = () => {
     <div className='Container'>
       <div className='top-con'>
         <img className='woman' src={Woman} />
-        <div>
-          <img src={Logo} className='logo' />
+        <div className='big-circle'>
+          <div className='small-circle'>{EmpData.length}</div>
         </div>
       </div>
       {showHomeComp &&

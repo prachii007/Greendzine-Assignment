@@ -23,7 +23,7 @@ export const Login = () => {
                 }}>
                 We are electric
             </div>
-            <div style={{
+            <div className='login-fields' style={{
                 display: "flex",
                 flexDirection: "column",
             }}>

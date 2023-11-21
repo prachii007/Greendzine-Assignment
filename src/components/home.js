@@ -26,9 +26,11 @@ export const Home = () => {
         </div>
       </div>
       {showHomeComp &&
-        <div className='middle-con' style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
+        <div className='middle-con' >
           <div style={{
-            backgroundColor: "#1A2C2C", width: "90%", color: "#8e9085", lineHeight: "45px", borderRadius: "20px"
+            backgroundColor: "#1A2C2C",
+            width: "90%",
+            color: "#8e9085", lineHeight: "45px", borderRadius: "20px"
           }}>Employee Productivity Dashboard</div>
           <div style={{
             background: "#131917",
@@ -41,7 +43,11 @@ export const Home = () => {
             boxSizing: "border-box"
           }}>
             <div style={{ marginBottom: "20px" }}>
-              <div style={{ display: "flex", justifyContent: "space-between", width: "80%", margin: "0 auto 10px", marginBottom: "10px" }}>
+              <div style={{
+                display: "flex", justifyContent: "space-between"
+                , width: "80%"
+                , margin: "0 auto 10px", marginBottom: "10px"
+              }}>
                 <div>Productivity on Monday</div>
                 <div style={{ color: "#36A546" }}>4%</div>
               </div>
@@ -55,7 +61,7 @@ export const Home = () => {
               }}></div>
             </div>
             <div style={{ marginBottom: "20px" }}>
-            <div style={{ display: "flex", justifyContent: "space-between", width: "80%", margin: "0 auto 10px", marginBottom: "10px" }}>
+              <div style={{ display: "flex", justifyContent: "space-between", width: "80%", margin: "0 auto 10px", marginBottom: "10px" }}>
                 <div>Productivity on Tuesday</div>
                 <div style={{ color: "#36A546" }}>92%</div>
               </div>
@@ -69,7 +75,7 @@ export const Home = () => {
               }}></div>
             </div>
             <div style={{ marginBottom: "20px" }}>
-            <div style={{ display: "flex", justifyContent: "space-between", width: "80%", margin: "0 auto 10px", marginBottom: "10px" }}>
+              <div style={{ display: "flex", justifyContent: "space-between", width: "80%", margin: "0 auto 10px", marginBottom: "10px" }}>
                 <div>Productivity on Wednesday</div>
                 <div style={{ color: "#36A546" }}>122%</div>
               </div>
@@ -83,7 +89,7 @@ export const Home = () => {
               }}></div>
             </div>
             <div style={{ marginBottom: "20px" }}>
-            <div style={{ display: "flex", justifyContent: "space-between", width: "80%", margin: "0 auto 10px", marginBottom: "10px" }}>
+              <div style={{ display: "flex", justifyContent: "space-between", width: "80%", margin: "0 auto 10px", marginBottom: "10px" }}>
                 <div>Productivity on Thursday</div>
                 <div style={{ color: "#36A546" }}>93%</div>
               </div>
@@ -98,7 +104,7 @@ export const Home = () => {
               </div>
             </div>
             <div style={{ marginBottom: "20px" }}>
-            <div style={{ display: "flex", justifyContent: "space-between", width: "80%", margin: "0 auto 10px", marginBottom: "10px" }}>
+              <div style={{ display: "flex", justifyContent: "space-between", width: "80%", margin: "0 auto 10px", marginBottom: "10px" }}>
                 <div>Productivity on Friday</div>
                 <div style={{ color: "#36A546" }}>89%</div>
               </div>
@@ -111,7 +117,7 @@ export const Home = () => {
                 marginLeft: "10px"
               }}></div>
             </div> <div style={{ marginBottom: "20px" }}>
-            <div style={{ display: "flex", justifyContent: "space-between", width: "80%", margin: "0 auto 10px", marginBottom: "10px" }}>
+              <div style={{ display: "flex", justifyContent: "space-between", width: "80%", margin: "0 auto 10px", marginBottom: "10px" }}>
                 <div>Productivity on Saturday</div>
                 <div style={{ color: "#36A546" }}>98%</div>
               </div>

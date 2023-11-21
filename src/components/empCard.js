@@ -13,19 +13,27 @@ export const EmpCard = ({ data }) => {
                 padding: "10px",
                 backgroundColor: '#131716',
             }}>
-            <table cellPadding={8}>
+            <table cellPadding={8} style={{ width: "100%" }}>
                 <tbody>
                     <tr>
                         <td style={{ color: "#8e9085" }}>EMP ID</td>
                         <td>:</td>
                         <td style={{ fontWeight: "bold" }}>{data.empID}</td>
                         <td style={{
+                            display: 'flex',
+                            justifyContent: "center",
+                            alignItems: "center",
                             borderRadius: "50%",
-                            border: "1px solid black",
-                            height: "20px",
-                            width: "20px",
-                            textAlign: 'center'
-                        }}>{data.empID}</td>
+                            border: "2px solid black",
+                            height: "50px",
+                            width: "50px",
+                            background:"#38383840"
+                        }}>
+                            <div style={{
+                                textAlign: 'center',
+                                margin: "0"
+                            }}>{data.empID}</div>
+                        </td>
                     </tr>
                     <tr>
                         <td style={{ color: "#8e9085" }}>Name</td>

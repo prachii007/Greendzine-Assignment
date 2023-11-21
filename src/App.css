@@ -21,8 +21,9 @@
   height: 100vh;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  /* justify-content: space-between; */
   flex-direction: column;
+  position: relative;
 }
 
 .login-container {
@@ -44,6 +45,7 @@
   width: 100%;
   display: flex;
   flex-direction: column;
+  margin-bottom: 25px;
 }
 
 .big-circle {
@@ -94,8 +96,9 @@
   background-color: rgb(94, 94, 94, .4);
   background-color: #131917;
   box-shadow: "inset 0px 4px 0px #00000040";
-  position: sticky;
+  position: fixed;
   bottom: 0;
+  z-index: 5;
 }
 
 .bottom-con div {

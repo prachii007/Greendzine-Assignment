@@ -31,7 +31,8 @@ export const Home = () => {
             backgroundColor: "#1A2C2C", width: "90%", color: "#8e9085", lineHeight: "45px", borderRadius: "20px"
           }}>Employee Productivity Dashboard</div>
           <div style={{
-            backgroundColor: "rgb(94, 94, 94,.4)",
+            // backgroundColor: "rgb(94, 94, 94,.4)",
+            background: "#131917",
             boxShadow: "inset 0px 4px 0px #00000040",
             width: "90%",
             borderRadius: "10px",
@@ -157,7 +158,7 @@ export const Home = () => {
             maxHeight: '400px',
             overflowY: 'auto',
             overflowX: "hidden",
-            display: 'flex', 
+            display: 'flex',
             flexDirection: "column",
           }}>
             {EmpData.filter(item => {

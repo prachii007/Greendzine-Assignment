@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/Greendzine-Assignment/static/css/main.a84f627e.css",
-    "main.js": "/Greendzine-Assignment/static/js/main.2c024755.js",
+    "main.css": "/Greendzine-Assignment/static/css/main.b4e4a182.css",
+    "main.js": "/Greendzine-Assignment/static/js/main.1d586a38.js",
     "static/js/787.79ec5700.chunk.js": "/Greendzine-Assignment/static/js/787.79ec5700.chunk.js",
     "index.html": "/Greendzine-Assignment/index.html",
-    "main.a84f627e.css.map": "/Greendzine-Assignment/static/css/main.a84f627e.css.map",
-    "main.2c024755.js.map": "/Greendzine-Assignment/static/js/main.2c024755.js.map",
+    "main.b4e4a182.css.map": "/Greendzine-Assignment/static/css/main.b4e4a182.css.map",
+    "main.1d586a38.js.map": "/Greendzine-Assignment/static/js/main.1d586a38.js.map",
     "787.79ec5700.chunk.js.map": "/Greendzine-Assignment/static/js/787.79ec5700.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.a84f627e.css",
-    "static/js/main.2c024755.js"
+    "static/css/main.b4e4a182.css",
+    "static/js/main.1d586a38.js"
   ]
 }

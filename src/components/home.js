@@ -154,7 +154,11 @@ export const Home = () => {
           </div>
           <div className='scroll-container' style={{
             width: "90%",
-            maxHeight: '400px', overflowY: 'auto', overflowX: "hidden"
+            maxHeight: '400px',
+            overflowY: 'auto',
+            overflowX: "hidden",
+            display: 'flex', 
+            flexDirection: "column",
           }}>
             {EmpData.filter(item => {
               if (item.name.toLowerCase().includes(keyword.toLowerCase())) {

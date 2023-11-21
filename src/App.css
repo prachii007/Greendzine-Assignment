@@ -120,3 +120,8 @@
   color: #C0C4C3;
   opacity: 1;
 }
+
+.card-child:nth-child(even) {
+  align-self: flex-end;
+}
+

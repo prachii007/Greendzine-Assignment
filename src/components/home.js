@@ -165,8 +165,8 @@ export const Home = () => {
             overflowY: 'auto',
             overflowX: "hidden",
             display: 'flex',
-
             flexDirection: "column",
+            paddingBottom: "70px",
           }}>
             {EmpData.filter(item => {
               if (item.name.toLowerCase().includes(keyword.toLowerCase())) {

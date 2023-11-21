@@ -28,13 +28,13 @@ export const Home = () => {
       {showHomeComp &&
         <div className='middle-con' style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
           <div style={{
-            backgroundColor: "#1A2C2C", width: "90%", color: "#FFFFFFB3", lineHeight: "45px", borderRadius: "20px"
+            backgroundColor: "#1A2C2C", width: "90%", color: "#8e9085", lineHeight: "45px", borderRadius: "20px"
           }}>Employee Productivity Dashboard</div>
           <div style={{
             backgroundColor: "rgb(94, 94, 94,.4)",
             boxShadow: "inset 0px 4px 0px #00000040",
-            width: "90%"
-            , borderRadius: "10px",
+            width: "90%",
+            borderRadius: "10px",
             color: "White",
             fontSize: "12px",
             textAlign: "left"
@@ -129,13 +129,14 @@ export const Home = () => {
         <div className='middle-con' style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
           <div className='search-wrapper' style={{ width: "90%" }}>
             <input
+              id="searchbar"
               onChange={obj => updateKeyword(obj.target.value)}
               type='text' placeholder='Search with name'
               style={{
                 borderRadius: "20px",
                 lineHeight: "42px",
                 color: "white",
-                backgroundColor: '#5E5E5E82',
+                backgroundColor: "#131716",
                 border: "black",
                 marginBottom: "25px",
                 width: "100%",
@@ -147,7 +148,7 @@ export const Home = () => {
             />
             <div className='search-icon'>
               <i className="ri-search-line" style={{
-                color: "#5e5e5e", fontSize: "20px"
+                color: "#C0C4C3", fontSize: "20px"
               }} />
             </div>
           </div>

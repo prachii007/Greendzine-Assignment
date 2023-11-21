@@ -95,3 +95,8 @@
   transform: translateY(-50%);
   color: #aaa;
 }
+
+#searchbar::placeholder {
+  color: #C0C4C3;
+  opacity: 1;
+}

@@ -165,6 +165,7 @@ export const Home = () => {
             overflowY: 'auto',
             overflowX: "hidden",
             display: 'flex',
+
             flexDirection: "column",
           }}>
             {EmpData.filter(item => {
